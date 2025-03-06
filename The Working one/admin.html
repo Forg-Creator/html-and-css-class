@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - View Submissions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+        var password = "Hawkins1"; // Set your password here
+        var pass = prompt("Please enter the password to access the admin page:");
+
+        if (pass !== password) {
+            alert("Incorrect password!");
+            window.location.href = "index.html"; // Redirect if the password is wrong
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>HTML & CSS Class - Admin Panel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="submit-project.html">Submit Project</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Student Project Submissions</h2>
+            <p>Below is the embedded Google Sheet with the submissions:</p>
+            
+            <!-- Embed Google Sheets -->
+            <iframe src="https://docs.google.com/spreadsheets/d/1ZvfryKv39oHKcXCyAAYeow-vBTogKQ8NI9R7vk7HVbc/edit?gid=2006537791#gid=2006537791" width="640" height="480"></iframe>
+        </section>
+    </main>
+</body>
+</html>
